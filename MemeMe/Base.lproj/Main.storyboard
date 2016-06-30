@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Meme View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MemeViewController" customModule="MemeMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H7a-an-uLC">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem title="Share" id="vdr-44-iFP"/>
+                                </items>
+                            </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8mx-wP-RYe">
+                                <rect key="frame" x="0.0" y="44" width="600" height="512"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zca-Kc-LeU">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="camera" id="88n-aa-SXz">
+                                        <connections>
+                                            <action selector="pickFromCamera:" destination="BYZ-38-t0r" id="7gb-nZ-EYh"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Xcv-iW-zua"/>
+                                    <barButtonItem title="Album" id="hCA-5Y-Xqp">
+                                        <connections>
+                                            <action selector="pickFromPicAlbum:" destination="BYZ-38-t0r" id="D2F-fd-vRc"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6TT-8Z-ItR">
+                                <rect key="frame" x="285" y="74" width="30" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <connections>
+                                    <action selector="topBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0nh-zs-37K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MwO-tf-Pec">
+                                <rect key="frame" x="285" y="496" width="30" height="30"/>
+                                <connections>
+                                    <action selector="bottomBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nGj-rw-MCR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zca-Kc-LeU" firstAttribute="top" secondItem="8mx-wP-RYe" secondAttribute="bottom" id="1ua-k0-fNe"/>
+                            <constraint firstItem="8mx-wP-RYe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="34E-qs-bvk"/>
+                            <constraint firstItem="6TT-8Z-ItR" firstAttribute="top" secondItem="H7a-an-uLC" secondAttribute="bottom" constant="30" id="3i9-ve-djc"/>
+                            <constraint firstItem="8mx-wP-RYe" firstAttribute="top" secondItem="H7a-an-uLC" secondAttribute="bottom" id="5ya-Hf-wHd"/>
+                            <constraint firstAttribute="trailing" secondItem="Zca-Kc-LeU" secondAttribute="trailing" id="CkJ-Vz-hzi"/>
+                            <constraint firstItem="H7a-an-uLC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="DIv-TY-dJg"/>
+                            <constraint firstAttribute="bottom" secondItem="Zca-Kc-LeU" secondAttribute="bottom" id="HkL-zX-V3S"/>
+                            <constraint firstAttribute="trailing" secondItem="8mx-wP-RYe" secondAttribute="trailing" id="Xqy-vI-ZU3"/>
+                            <constraint firstAttribute="trailing" secondItem="H7a-an-uLC" secondAttribute="trailing" id="eeF-Lo-DyX"/>
+                            <constraint firstItem="Zca-Kc-LeU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jRz-xF-1zz"/>
+                            <constraint firstItem="6TT-8Z-ItR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t5q-zo-Kuw"/>
+                            <constraint firstItem="H7a-an-uLC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ugC-1m-PXI"/>
+                            <constraint firstItem="Zca-Kc-LeU" firstAttribute="top" secondItem="MwO-tf-Pec" secondAttribute="bottom" constant="30" id="vpF-fI-RCn"/>
+                            <constraint firstItem="MwO-tf-Pec" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zaV-Ye-eYj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomBtnOutlet" destination="MwO-tf-Pec" id="bH8-Rd-FJR"/>
+                        <outlet property="cameraBtnOutlet" destination="88n-aa-SXz" id="SwO-7X-IXH"/>
+                        <outlet property="imgOutlet" destination="8mx-wP-RYe" id="gkQ-mf-phi"/>
+                        <outlet property="topBtnOutlet" destination="6TT-8Z-ItR" id="AQD-CL-o4p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="413" y="429"/>
+        </scene>
+    </scenes>
+</document>
