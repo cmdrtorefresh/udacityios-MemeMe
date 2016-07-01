@@ -14,6 +14,7 @@
 		225D32F61D2495AC00738C23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 225D32F41D2495AC00738C23 /* LaunchScreen.storyboard */; };
 		225D33011D2495AC00738C23 /* MemeMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225D33001D2495AC00738C23 /* MemeMeTests.swift */; };
 		225D330C1D2495AC00738C23 /* MemeMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225D330B1D2495AC00738C23 /* MemeMeUITests.swift */; };
+		225D331A1D24A97D00738C23 /* MemeTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225D33191D24A97D00738C23 /* MemeTextFieldDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		225D33071D2495AC00738C23 /* MemeMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemeMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		225D330B1D2495AC00738C23 /* MemeMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeMeUITests.swift; sourceTree = "<group>"; };
 		225D330D1D2495AC00738C23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		225D33191D24A97D00738C23 /* MemeTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemeTextFieldDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				225D32F21D2495AC00738C23 /* Assets.xcassets */,
 				225D32F41D2495AC00738C23 /* LaunchScreen.storyboard */,
 				225D32F71D2495AC00738C23 /* Info.plist */,
+				225D33191D24A97D00738C23 /* MemeTextFieldDelegate.swift */,
 			);
 			path = MemeMe;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				225D32EE1D2495AC00738C23 /* MemeViewController.swift in Sources */,
+				225D331A1D24A97D00738C23 /* MemeTextFieldDelegate.swift in Sources */,
 				225D32EC1D2495AC00738C23 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +488,7 @@
 				225D33121D2495AC00738C23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		225D33131D2495AC00738C23 /* Build configuration list for PBXNativeTarget "MemeMeTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +497,7 @@
 				225D33151D2495AC00738C23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		225D33161D2495AC00738C23 /* Build configuration list for PBXNativeTarget "MemeMeUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +506,7 @@
 				225D33181D2495AC00738C23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
